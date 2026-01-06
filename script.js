@@ -1,23 +1,21 @@
 let count = 0;
+const counterDisplay = document.getElementById('counter-value');
 
-const countEl = document.getElementById("count");
-const incBtn = document.getElementById("inc");
-const decBtn = document.getElementById("dec");
-const resetBtn = document.getElementById("reset");
+function updateDisplay() {
+    counterDisplay.innerText = count;
+}
 
-incBtn.addEventListener("click", () => {
+function increment() {
     count++;
-    countEl.innerText = count;
-});
+    updateDisplay();
+}
 
-decBtn.addEventListener("click", () => {
-    if (count > 0) {
-        count--;
-        countEl.innerText = count;
-    }
-});
+function decrement() {
+    count--;
+    updateDisplay();
+}
 
-resetBtn.addEventListener("click", () => {
+function reset() {
     count = 0;
-    countEl.innerText = count;
-});
+    updateDisplay();
+}

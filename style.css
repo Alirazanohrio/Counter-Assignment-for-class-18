@@ -1,11 +1,11 @@
 body {
-    margin: 0;
-    height: 100vh;
-    background: #b7e3f4;
+    background-color: #add8e6; /* Light Blue background */
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
 }
 
 .container {
@@ -13,34 +13,37 @@ body {
 }
 
 h1 {
-    letter-spacing: 2px;
+    color: #333;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-#count {
-    font-size: 90px;
-    font-weight: 600;
-    margin-bottom: 30px;
+#counter-value {
+    font-size: 10rem;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
 }
 
-.btns button {
-    padding: 10px 20px;
-    font-size: 15px;
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 25px;
+    font-size: 1.2rem;
     border: none;
-    color: white;
+    border-radius: 5px;
     cursor: pointer;
-    margin: 0 6px;
-    border-radius: 4px;
+    color: white;
+    transition: transform 0.1s;
 }
 
-#dec {
-    background: green
+.btn:active {
+    transform: scale(0.95);
 }
 
-#reset {
-    background: red
-}
-
-#inc {
-    background: blue
-}
+.decrement { background-color: #4caf50; } /* Green */
+.reset { background-color: #f44336; }     /* Red */
+.increment { background-color: #2196f3; } /* Blue */
