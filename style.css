@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #b7e3f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#count {
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.btns button {
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 0 6px;
+    border-radius: 4px;
+}
+
+#dec {
+    background: green
+}
+
+#reset {
+    background: red
+}
+
+#inc {
+    background: blue
+}
